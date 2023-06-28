@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:MapSample"
+             x:Class="MapSample.MainPage">
+
+    <StackLayout Spacing="0">
+        <local:CustomMap x:Name="LocationMap" MapType="Hybrid" MapClicked="LocationMap_MapClicked" IsShowingUser="True" TrafficEnabled="False" ItemsSource="{Binding Locations}">
+        <!--<local:CustomMap x:Name="LocationMap" HasScrollEnabled="False" MapType="Hybrid" IsShowingUser="True" TrafficEnabled="False" ItemsSource="{Binding Locations}">-->
+            <local:CustomMap.ItemTemplate>
+                <DataTemplate>
+                    <!--<maps:Pin Position="{Binding PositionOnMap}" Address="{Binding Address}" Label="{Binding Label}" MarkerClicked="Pin_MarkerClicked"/>-->
+                    <local:CustomPin Type="Generic" Position="{Binding PositionOnMap}" Address="{Binding Address}" Label="{Binding Label}" InfoWindowClicked="Pin_InfoWindowClicked"/>
+                </DataTemplate>
+            </local:CustomMap.ItemTemplate>
+            <local:CustomMap.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </local:CustomMap.GestureRecognizers>
+        </local:CustomMap>
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Button Text="Clear" Clicked="Button_Clicked"/>
+            <Button Text="Create" Clicked="Button_Clicked_1"/>
+            <Button Text="Points" Clicked="Button_Clicked_2"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

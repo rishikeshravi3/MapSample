@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapSample.Verify">
+    <ContentPage.Content>
+        <ContentView Padding="0,30,0,0" BackgroundColor="#F5FEF3">
+            <StackLayout Padding="30,20" Spacing="10" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                    <Label Text="Back to Registration" HorizontalOptions="Start" FontSize="14" TextColor="#374957" />
+                    <Label Text="English" HorizontalOptions="EndAndExpand" FontSize="16" TextColor="#374957" />
+                </StackLayout>
+
+                <Label Text="Verify phone number" HorizontalOptions="Start" FontSize="22" FontAttributes="Bold" TextColor="#374957" />
+                <BoxView HorizontalOptions="Start" Color="#3CCF4E" WidthRequest="50" HeightRequest="5"/>
+
+                <StackLayout Spacing="5" Margin="0,10">
+                    <Label Text="Enter OTP" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                    <Label Text="Enter 4 digit verification code sent to your number (9876543210)." HorizontalOptions="Start" FontSize="14" TextColor="#374957" />
+                </StackLayout>
+
+                <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="20" HorizontalOptions="Center">
+                    <Frame Grid.Column="0" HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                        <Entry TextColor="#374957" FontSize="16" MaxLength="1" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </Frame>
+                    <Frame Grid.Column="1" HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                        <Entry TextColor="#374957" FontSize="16" MaxLength="1" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </Frame>
+                    <Frame Grid.Column="2" HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                        <Entry TextColor="#374957" FontSize="16" MaxLength="1" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </Frame>
+                    <Frame Grid.Column="3" HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                        <Entry TextColor="#374957" FontSize="16" MaxLength="1" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                    </Frame>
+                </Grid>
+
+                <Label Margin="0,20" Text="Change Phone Number" HorizontalOptions="Start" FontSize="16" TextColor="#2C8CF4" />
+
+                <Button VerticalOptions="EndAndExpand" CornerRadius="10" Margin="0,5" BackgroundColor="#3CCF4E" Text="VERIFY" TextColor="#FFFFFF"/>
+
+            </StackLayout>
+        </ContentView>
+       
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapSample.Signup">
+    <ContentPage.Content>
+        <StackLayout Padding="30,30,30,20" Spacing="10" BackgroundColor="White">
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Back to Login" HorizontalOptions="Start" FontSize="14" TextColor="#374957" />
+                <Label Text="English" HorizontalOptions="EndAndExpand" FontSize="16" TextColor="#374957" />
+            </StackLayout>
+
+            <ScrollView Margin="0,20,0,0" VerticalScrollBarVisibility="Never">
+                <StackLayout Spacing="10">
+                    <Label Text="Create New Account" HorizontalOptions="Start" FontSize="22" FontAttributes="Bold" TextColor="#374957" />
+                    <BoxView HorizontalOptions="Start" Color="#3CCF4E" WidthRequest="50" HeightRequest="5"/>
+
+                    <StackLayout Spacing="10" Margin="0,5">
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                            <StackLayout Grid.Column="0" Spacing="5">
+                                <Label Text="Fist Name" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                                <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                    <Entry Placeholder="First name" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" Spacing="5">
+                                <Label Text="Last Name" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                                <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                    <Entry Placeholder="Last Name" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                                </Frame>
+                            </StackLayout>
+                        </Grid>
+
+                        <StackLayout Spacing="5">
+                            <Label Text="Email" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Enter email address" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="5">
+                            <Label Text="Phone Number" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Enter phone number" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="5">
+                            <Label Text="Gov ID Proof" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="15" BorderColor="#D8D8D8" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Aadhar Card" HorizontalOptions="Start" FontSize="16" TextColor="#374957" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="5">
+                            <Label Text="Aadhar Card Number" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Enter Aadhar card number" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="10">
+                            <Label Margin="0,0,0,-5" Text="Address" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Address line 1" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Address line 2" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Address line 3" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="5" Margin="0,5">
+                            <Label Text="Create New Password" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Enter password" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="5" Margin="0,5">
+                            <Label Text="Confirm Password" HorizontalOptions="Start" FontSize="16" FontAttributes="Bold" TextColor="#374957" />
+                            <Frame HasShadow="False" Padding="10,5" BorderColor="#D8D8D8" CornerRadius="10">
+                                <Entry Placeholder="Re-enter password" PlaceholderColor="#979797" TextColor="#374957" FontSize="16" />
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                    
+
+                </StackLayout>
+            </ScrollView>
+           
+            <Button CornerRadius="10" Margin="0,5" BackgroundColor="#3CCF4E" Text="SUBMIT" TextColor="#FFFFFF"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
